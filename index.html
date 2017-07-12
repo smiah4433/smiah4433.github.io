@@ -1,33 +1,127 @@
 <!DOCTYPE html>
 <head>
-  <title>Eman Miah</title>
-  <style>
-    body {
-      text-align: center;
-      background: url("http://i.imgur.com/Dm7GKnQ.png");
-      background-size: cover;
-      background-position: center;
-      color: white;
-      font-family: helvetica;
-    }
-    p {
-      font-size: 22px;
-    }
-    input {
-      border: 0;
-      padding: 10px;
-      font-size: 18px;
-    }
-    input[type="submit"] {
-      background: red;
-      color: white;
-    }
-  </style>
+<script src="/assets/jquery.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+<title>Eman's Football </title>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: url("http://i.imgur.com/xHvgii4.jpg");
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'luckiest guy', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #8A4FFF;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #FCFCFC;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("http://i.imgur.com/xgHzi.jpg");
+}
+.second{
+  background-image: url("http://static.nfl.com/static/content/public/pg-photo/2015/05/19/0ap3000000493214/3-bob-hoernschemeyer-rb-navy_pg_600.jpg");
+}
+.third{
+  background-image: url("http://www.irishtimes.com/polopoly_fs/1.1761895.1397495051!/image/image.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
 </head>
+
 <body>
-  <img src="http://i.imgur.com/NAXyeMR.png">
-  <p>Hi! I'm Eman, I like to play sports!</p>
-  <input type="email" placeholder="Your email">
-  <input type="submit">
+<h1>American Football</h1>
+<h2> The Best Sport Out There</h2>
+<div class="first">
+
+ <a href="http://www.nfl.com/rulebook/beginnersguidetofootball"><p>How to Play Football</p></a><span </span></br>
+  <small> First of all there are two teams.One plays defense and the other plays offense. Like all sports the offense trys to score and the defense tries to stop the offense. The football field is about 120 yards. First the kickoff team will kick the football from the the recieveing team 40 yard line. The retunring team has a chance to return in it for a touchdown (6 points). After the touchdown, the team has a chance to make a 1 point or 2. If they go for the 1, the have to kick the ball between the yellow poles and if they go for 2, then they'll have to make a play to reach the endzone from the 12 yard line and they only get one chance, vise versa. The team wiht the most points win. </small>
+</div>
+
+<div class="second">
+ <a href="http://www.profootballhof.com/football-history/birth-of-pro-football/"><p> When It All Started</p></a><span </span></br>
+  </small>
+</div>
+  
+<div class="third">
+  <a href="http://www.livestrong.com/article/406283-what-are-the-health-benefits-of-being-a-football-player/"><p>Aftermath</p></a><span </span></br>
+  <small></small></p>
+</div>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/13MWGwwehLc" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
 </body>
-</html>
